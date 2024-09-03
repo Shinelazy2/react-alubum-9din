@@ -5,16 +5,6 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"],
-      "@/assets": ["src/assets*"],
-      "@/components": ["src/components*"],
-      "@/pages": ["src/pages*"],
-      "@/recoil": ["src/recoil*"],
-      "@/apis": ["src/apis*"],
-      "@/types": ["src/types*"]
-    },
     "noImplicitAny": false,
     "strictNullChecks": false
   }
