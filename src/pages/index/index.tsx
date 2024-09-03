@@ -1,11 +1,13 @@
 import CommonHader from "@components/common/header/CommonHader";
 import styles from "./index.module.scss";
 import CommonSearchBar from "@components/common/searchBar/CommonSearchBar";
+import CommonNav from "@components/common/navigation/CommonNav";
 
 function index() {
   return (
     <div className={styles.page}>
       <CommonHader />
+      <CommonNav />
       <div className={styles.page__contents}>
         <div className={styles.page__contents__introBox}>
           <div className={styles.wrapper}>
