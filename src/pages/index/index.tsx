@@ -1,9 +1,10 @@
+import CommonHader from "@pages/components/common/header/CommonHader";
 import styles from "./styles/index.module.scss";
 
 function index() {
   return (
     <div className={styles.page}>
-      {/* {공통 헤더 UI } */}
+      <CommonHader />
       <div className={styles.page__contents}>
         <div className={styles.page__contents__introBox}>
           <div className={styles.wrapper}>
