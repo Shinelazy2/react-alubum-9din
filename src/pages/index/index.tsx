@@ -1,5 +1,6 @@
-import CommonHader from "@pages/components/common/header/CommonHader";
-import styles from "./styles/index.module.scss";
+import CommonHader from "@components/common/header/CommonHader";
+import styles from "./index.module.scss";
+import CommonSearchBar from "@components/common/searchBar/CommonSearchBar";
 
 function index() {
   return (
@@ -13,7 +14,7 @@ function index() {
               Internet <br />
               Createor
             </span>
-            {/* {Search UI} */}
+            <CommonSearchBar />
           </div>
         </div>
         <div className={styles.page__content__imageBox}></div>
