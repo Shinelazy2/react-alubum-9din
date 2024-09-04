@@ -2,7 +2,7 @@ import styles from "./CommonHeader.module.scss";
 
 function CommonHader() {
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <div className={styles.header__logoBox}>
         <img
           className={styles.header__logoBox__logo}
@@ -17,7 +17,7 @@ function CommonHader() {
           HyunJun | @shinelazy@gmail.com
         </span>
       </div>
-    </div>
+    </header>
   );
 }
 
