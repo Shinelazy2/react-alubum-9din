@@ -12,10 +12,17 @@ import DetailDialog from "@components/common/dialog/DetailDialog";
 function Index() {
   const imgSelector = useRecoilValue(imageSelector);
   const [open, setOpen] = useState<boolean>(false); // detail dialog open state
-  const [imageData, setImageData] = useState<CardDTO[]>([]);
+  const [imageData, setImageData] = useState<CardDTO>();
 
   const cardList = imgSelector.data.results.map((card: CardDTO) => {
-    return <Card data={card} key={card.id} handleDialog={setOpen} />;
+    return (
+      <Card
+        data={card}
+        key={card.id}
+        handleDialog={setOpen}
+        handleSetData={setImageData}
+      />
+    );
   });
 
   return (
@@ -36,7 +43,9 @@ function Index() {
         <div className={styles.page__contents__imageBox}>{cardList}</div>
       </div>
       <CommonFooter />
-      {open && <DetailDialog />}
+      {open && imageData && (
+        <DetailDialog data={imageData} handleDialog={setOpen} />
+      )}
     </div>
   );
 }
