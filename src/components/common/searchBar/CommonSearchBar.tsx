@@ -13,7 +13,7 @@ function CommonSearchBar() {
 
   const onSearch = () => {
     if (text === "") {
-      setSearch("");
+      setSearch(search);
     } else {
       setSearch(text);
     }

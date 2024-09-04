@@ -20,7 +20,7 @@ function Index() {
   // 반복되는 경우에 사용하고, Caching 한다.
   const CARD_LIST = useMemo(() => {
     if (imgSelector.state === "hasValue") {
-      return imgSelector.contents.map((card: CardDTO) => {
+      return imgSelector.contents.results.map((card: CardDTO) => {
         return (
           <Card
             data={card}
