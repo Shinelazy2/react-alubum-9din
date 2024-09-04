@@ -17,8 +17,7 @@ export const imageSelector = selector({
       const response = await axios.get(
         `${API_URL}?query=${searchValue}&client_id=${API_KEY}&page=${pageValue}&per_page=${PER_PAGE}`
       );
-      console.log("response", response);
-      return response;
+      return response.data.results;
     } catch (error) {
       console.error("Error fetching images:", error);
       throw error;
