@@ -16,6 +16,7 @@ export default defineConfig({
       "@recoil": fileURLToPath(new URL("./src/recoil", import.meta.url)),
       "@apis": fileURLToPath(new URL("./src/apis", import.meta.url)),
       "@types": fileURLToPath(new URL("./src/types", import.meta.url)),
+      "@store": fileURLToPath(new URL("./src/store", import.meta.url)),
     },
   },
   // SCSS

@@ -27,7 +27,8 @@
       "@pages": ["src/pages*"],
       "@recoil": ["src/recoil*"],
       "@apis": ["src/apis*"],
-      "@types": ["src/types*"]
+      "@types": ["src/types*"],
+      "@store": ["src/store*"]
     }
   },
   "include": ["src"]
