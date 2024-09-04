@@ -9,6 +9,7 @@ import { CardDTO } from "./types/card.type";
 import { useRecoilValueLoadable } from "recoil";
 import { imageSelector } from "@store/selectors/imageSelector";
 import DetailDialog from "@components/common/dialog/DetailDialog";
+import Loading from "./components/Loading";
 function Index() {
   // const imgSelector = useRecoilValue(imageSelector);
   const imgSelector = useRecoilValueLoadable(imageSelector);
@@ -31,7 +32,11 @@ function Index() {
         );
       });
     } else {
-      <div>Loading</div>;
+      return (
+        <div className={styles.loadingContainer}>
+          <Loading />
+        </div>
+      );
     }
   }, [imgSelector]);
 

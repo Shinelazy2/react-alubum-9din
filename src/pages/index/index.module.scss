@@ -68,3 +68,11 @@ $NAVIGATION-HEGIHT: 50px;
     }
   }
 }
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
