@@ -16,7 +16,6 @@ function Index() {
     const API_KEY = import.meta.env.VITE_UNSPLASH_API_KEY;
     console.log("import.meta.env", import.meta.env);
 
-    // const API_KEY = 'SbD33OO3IBfwShiBLG5fGoROOc1gJoepFKHrDu_IITQ'; // 임시 방편
 
     console.log("API_KEY:", API_KEY); // 디버깅을 위해 API 키 출력
 
